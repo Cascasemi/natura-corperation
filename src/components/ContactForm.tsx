@@ -49,7 +49,7 @@ const ContactForm = () => {
             onChange={handleChange}
             required
             className="input-field"
-            placeholder="John Doe"
+            placeholder="Kwame Frimpong"
           />
         </div>
         <div>

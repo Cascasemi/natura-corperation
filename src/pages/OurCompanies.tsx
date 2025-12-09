@@ -1,4 +1,5 @@
 import { Heart, CreditCard, Plane, Sprout, Home as HomeIcon, ArrowRight, ExternalLink } from 'lucide-react';
+import worldcupFans from '@/assets/worldcup-fans.jpg';
 
 const companies = [
   {
@@ -47,7 +48,7 @@ const companies = [
     ],
     icon: Plane,
     color: '#9B59B6',
-    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80',
+    image: worldcupFans,
   },
   {
     id: 'natura-agroband',

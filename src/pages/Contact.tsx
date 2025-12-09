@@ -93,8 +93,8 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Headquarters</h4>
                     <p className="text-muted-foreground">
-                      123 Corporate Plaza, Business District<br />
-                      New York, NY 10001
+                      North Legon<br />
+                      Accra, Ghana
                     </p>
                   </div>
                 </div>
