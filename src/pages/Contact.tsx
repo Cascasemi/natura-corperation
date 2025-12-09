@@ -6,7 +6,7 @@ const offices = [
     city: 'New York',
     address: '123 Corporate Plaza, Business District',
     addressLine2: 'New York, NY 10001',
-    phone: '+1 (234) 567-890',
+    phone: '+233 53 740 2232',
     email: 'newyork@naturacorp.com',
     hours: 'Mon - Fri: 9:00 AM - 6:00 PM',
   },
@@ -14,7 +14,7 @@ const offices = [
     city: 'London',
     address: '45 Canary Wharf, Financial Center',
     addressLine2: 'London E14 5AB, UK',
-    phone: '+44 20 7946 0958',
+    phone: '+233 53 740 2232',
     email: 'london@naturacorp.com',
     hours: 'Mon - Fri: 9:00 AM - 5:30 PM',
   },
@@ -22,7 +22,7 @@ const offices = [
     city: 'Singapore',
     address: '78 Marina Bay Sands Tower',
     addressLine2: 'Singapore 018956',
-    phone: '+65 6789 0123',
+    phone: '+233 53 740 2232',
     email: 'singapore@naturacorp.com',
     hours: 'Mon - Fri: 9:00 AM - 6:00 PM',
   },
@@ -80,8 +80,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Phone</h4>
-                    <a href="tel:+1234567890" className="text-muted-foreground hover:text-accent transition-colors">
-                      +1 (234) 567-890
+                    <a href="tel:+233537402232" className="text-muted-foreground hover:text-accent transition-colors">
+                      +233 53 740 2232
                     </a>
                   </div>
                 </div>
