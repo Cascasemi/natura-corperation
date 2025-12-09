@@ -21,33 +21,33 @@ const values = [
 const leadership = [
   {
     name: 'Dr. Oliver Boakye Danquah',
-    role: 'Chief Executive Officer',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+    role: 'Chief Executive Officer/Founder',
+    image: '/src/assets/team/oliver.jpg',
   },
   {
-    name: 'Ing. Benaja Adomako',
-    role: 'Chief Financial Officer',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
+    name: 'Ing. Benajah Adomako',
+    role: 'Chief Financial Officer/Co-Founder',
+    image: '/src/assets/team/Benajah.jpg',
   },
   {
     name: 'Ing. George Kwame Frimpong',
     role: 'Chief Technology Officer',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
+    image: '/src/assets/team/george.jpg',
   },
   {
     name: 'Mr. Bernard Kwansah Ansah',
     role: 'Chief Marketing Officer',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+    image: '/src/assets/team/bernard.jpg',
   },
 ];
 
 const milestones = [
-  { year: '1999', title: 'Foundation', description: 'Natura Corporation founded with a vision for sustainable growth.' },
-  { year: '2005', title: 'First Acquisition', description: 'Natura Care established, entering the healthcare sector.' },
-  { year: '2010', title: 'Financial Expansion', description: 'Launch of Factopay, revolutionizing payment solutions.' },
-  { year: '2015', title: 'Global Reach', description: 'Cultural Escape Travels opens doors to worldwide tourism.' },
-  { year: '2018', title: 'Agriculture Initiative', description: 'Natura Agroband founded for sustainable farming.' },
-  { year: '2022', title: 'Real Estate Launch', description: 'Natura Homes enters the property development market.' },
+  { year: 'Sep/2023', title: 'Foundation', description: 'Natura Corporation founded with a vision for sustainable growth.' },
+  { year: 'Dec/2023', title: 'First Acquisition', description: 'Natura Care established, entering the healthcare sector.' },
+  { year: 'April/2024', title: 'Financial Expansion', description: 'Launch of Factopay, revolutionizing payment solutions.' },
+  { year: 'June/2024', title: 'Global Reach', description: 'Cultural Escape Travels opens doors to worldwide tourism.' },
+  { year: 'Jan/2025', title: 'Agriculture Initiative', description: 'Natura Agroband founded for sustainable farming.' },
+  { year: 'June/2025', title: 'FactoPay Anticipation', description: 'FactoPay enters into the world of digital finance.' },
 ];
 
 const About = () => {
