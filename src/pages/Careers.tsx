@@ -1,6 +1,11 @@
 import { ArrowRight, MapPin, Clock, Briefcase, Heart, TrendingUp, Users, Leaf, Coffee } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+import teamMeetingImg from '@/assets/careers/team-meeting.jpg';
+import brainstormingImg from '@/assets/careers/brainstorming.jpg';
+import presentationImg from '@/assets/careers/presentation.jpg';
+import celebrationImg from '@/assets/careers/celebration.jpg';
+
 const benefits = [
   {
     icon: Heart,
@@ -74,10 +79,10 @@ const openPositions = [
 ];
 
 const cultureImages = [
-  'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80',
-  'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80',
-  'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80',
-  'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
+  teamMeetingImg,
+  brainstormingImg,
+  presentationImg,
+  celebrationImg,
 ];
 
 const Careers = () => {
