@@ -117,7 +117,7 @@ const Home = () => {
                 Nurturing Growth, <span className="gradient-text">Inspiring Change</span>
               </h2>
               <p className="text-body text-muted-foreground mb-6">
-                For over 25 years, Natura Corporation has been at the forefront of sustainable 
+                For over 2 years, Natura Corporation has been at the forefront of sustainable 
                 business practices. Our diverse portfolio of companies reflects our commitment 
                 to innovation, excellence, and positive impact across multiple industries.
               </p>

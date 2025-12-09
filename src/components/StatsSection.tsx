@@ -78,7 +78,7 @@ const StatItem = ({ icon: Icon, value, suffix, label, delay }: StatItemProps) =>
 
 const StatsSection = () => {
   const stats = [
-    { icon: Calendar, value: 25, suffix: '+', label: 'Years of Excellence', delay: 0 },
+    { icon: Calendar, value: 2, suffix: '', label: 'Years of Excellence', delay: 0 },
     { icon: Building2, value: 5, suffix: '', label: 'Subsidiary Companies', delay: 150 },
     { icon: Users, value: 2500, suffix: '+', label: 'Team Members', delay: 300 },
     { icon: Globe, value: 12, suffix: '', label: 'Countries', delay: 450 },
