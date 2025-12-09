@@ -3,28 +3,31 @@ import ContactForm from '@/components/ContactForm';
 
 const offices = [
   {
-    city: 'New York',
-    address: '123 Corporate Plaza, Business District',
-    addressLine2: 'New York, NY 10001',
+    city: 'Accra',
+    region: 'Greater Accra Region',
+    address: 'North Legon, Adjacent ACP Estate',
+    addressLine2: 'Accra, Ghana',
     phone: '+233 53 740 2232',
-    email: 'newyork@naturacorp.com',
-    hours: 'Mon - Fri: 9:00 AM - 6:00 PM',
+    email: 'accra@naturacorp.com',
+    hours: 'Mon - Fri: 8:00 AM - 5:00 PM',
   },
   {
-    city: 'London',
-    address: '45 Canary Wharf, Financial Center',
-    addressLine2: 'London E14 5AB, UK',
+    city: 'Kumasi',
+    region: 'Ashanti Region',
+    address: 'Ahodwo, Near Melcom',
+    addressLine2: 'Kumasi, Ghana',
     phone: '+233 53 740 2232',
-    email: 'london@naturacorp.com',
-    hours: 'Mon - Fri: 9:00 AM - 5:30 PM',
+    email: 'kumasi@naturacorp.com',
+    hours: 'Mon - Fri: 8:00 AM - 5:00 PM',
   },
   {
-    city: 'Singapore',
-    address: '78 Marina Bay Sands Tower',
-    addressLine2: 'Singapore 018956',
+    city: 'Takoradi',
+    region: 'Western Region',
+    address: 'Market Circle, Liberation Road',
+    addressLine2: 'Takoradi, Ghana',
     phone: '+233 53 740 2232',
-    email: 'singapore@naturacorp.com',
-    hours: 'Mon - Fri: 9:00 AM - 6:00 PM',
+    email: 'takoradi@naturacorp.com',
+    hours: 'Mon - Fri: 8:00 AM - 5:00 PM',
   },
 ];
 
@@ -127,9 +130,10 @@ const Contact = () => {
                 className="glass-card p-6 md:p-8 animate-fade-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <h3 className="text-xl font-serif font-semibold text-foreground mb-4">
+                <h3 className="text-xl font-serif font-semibold text-foreground mb-1">
                   {office.city}
                 </h3>
+                <p className="text-sm text-accent font-medium mb-4">{office.region}</p>
                 <div className="space-y-4 text-sm">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
