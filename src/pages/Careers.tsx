@@ -43,37 +43,37 @@ const openPositions = [
   {
     title: 'Senior Software Engineer',
     department: 'Factopay - Technology',
-    location: 'New York, NY',
+    location: 'Accra, Greater Accra',
     type: 'Full-time',
   },
   {
     title: 'Healthcare Operations Manager',
     department: 'Natura Care - Operations',
-    location: 'Boston, MA',
+    location: 'Kumasi, Ashanti Region',
     type: 'Full-time',
   },
   {
     title: 'Travel Experience Designer',
     department: 'Cultural Escape Travels',
-    location: 'Remote',
+    location: 'Accra, Greater Accra',
     type: 'Full-time',
   },
   {
     title: 'Agricultural Scientist',
     department: 'Natura Agroband - R&D',
-    location: 'San Francisco, CA',
+    location: 'Takoradi, Western Region',
     type: 'Full-time',
   },
   {
     title: 'Real Estate Project Manager',
     department: 'Natura Homes - Development',
-    location: 'Miami, FL',
+    location: 'Accra, Greater Accra',
     type: 'Full-time',
   },
   {
     title: 'Financial Analyst',
     department: 'Natura Corporation - Finance',
-    location: 'New York, NY',
+    location: 'Kumasi, Ashanti Region',
     type: 'Full-time',
   },
 ];
