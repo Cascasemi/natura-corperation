@@ -1,4 +1,8 @@
 import { Target, Eye, Heart, Users, Award, Lightbulb } from 'lucide-react';
+import oliverImg from '@/assets/team/oliver.jpg';
+import benajahImg from '@/assets/team/Benajah.jpg';
+import georgeImg from '@/assets/team/george.jpg';
+import bernardImg from '@/assets/team/bernard.jpg';
 
 const values = [
   {
@@ -22,22 +26,22 @@ const leadership = [
   {
     name: 'Dr. Oliver Boakye Danquah',
     role: 'Chief Executive Officer/Founder',
-    image: '/src/assets/team/oliver.jpg',
+    image: oliverImg,
   },
   {
     name: 'Ing. Benajah Adomako',
     role: 'Chief Financial Officer/Co-Founder',
-    image: '/src/assets/team/Benajah.jpg',
+    image: benajahImg,
   },
   {
     name: 'Ing. George Kwame Frimpong',
     role: 'Chief Technology Officer',
-    image: '/src/assets/team/george.jpg',
+    image: georgeImg,
   },
   {
     name: 'Mr. Bernard Kwansah Ansah',
     role: 'Chief Marketing Officer',
-    image: '/src/assets/team/bernard.jpg',
+    image: bernardImg,
   },
 ];
 
