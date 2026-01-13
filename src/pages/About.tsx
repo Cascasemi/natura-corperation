@@ -30,7 +30,7 @@ const leadership = [
   },
   {
     name: 'Ing. Benajah Adomako',
-    role: 'Chief Financial Officer/Co-Founder',
+    role: 'Managing Director/Co-Founder',
     image: benajahImg,
   },
   {
