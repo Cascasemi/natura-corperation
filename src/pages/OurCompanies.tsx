@@ -15,7 +15,7 @@ const companies = [
       'Corporate health management',
     ],
     icon: Heart,
-    color: '#E74C3C',
+    color: '#0D9488',
     image: 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80',
   },
   {
@@ -31,7 +31,7 @@ const companies = [
       'Financial analytics and reporting',
     ],
     icon: CreditCard,
-    color: '#3498DB',
+    color: '#06B6D4',
     image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80',
   },
   {
@@ -47,7 +47,7 @@ const companies = [
       'Sustainable tourism initiatives',
     ],
     icon: Plane,
-    color: '#9B59B6',
+    color: '#E879F9',
     image: worldcupFans,
   },
   {
@@ -63,7 +63,7 @@ const companies = [
       'Agri-investment opportunities',
     ],
     icon: Sprout,
-    color: '#27AE60',
+    color: '#14B8A6',
     image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80',
   },
   {
@@ -79,7 +79,7 @@ const companies = [
       'Real estate investment opportunities',
     ],
     icon: HomeIcon,
-    color: '#F39C12',
+    color: '#C084FC',
     image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
   },
 ];
