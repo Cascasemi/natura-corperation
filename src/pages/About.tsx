@@ -79,7 +79,7 @@ const About = () => {
                 A Journey of <span className="gradient-text">Excellence</span>
               </h2>
               <p className="text-body text-muted-foreground mb-6">
-                Founded in 1999, Natura Corporation began with a simple yet powerful vision: 
+                Founded in 2023, Natura Corporation began with a simple yet powerful vision: 
                 to create a holding company that prioritizes sustainable growth while making 
                 a positive impact on communities worldwide.
               </p>
