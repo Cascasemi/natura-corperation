@@ -10,7 +10,7 @@ const companies = [
     description: 'Providing comprehensive healthcare and wellness solutions that prioritize patient well-being and innovative medical practices.',
     industry: 'Healthcare',
     icon: Heart,
-    color: '#0D9488',
+    color: '#E74C3C',
     link: '/companies#natura-care',
   },
   {
@@ -18,7 +18,7 @@ const companies = [
     description: 'Revolutionary financial technology and payment solutions that empower businesses with seamless, secure transactions.',
     industry: 'Finance',
     icon: CreditCard,
-    color: '#06B6D4',
+    color: '#3498DB',
     link: '/companies#factopay',
   },
   {
@@ -26,7 +26,7 @@ const companies = [
     description: 'Curating extraordinary travel experiences that connect people with diverse cultures and breathtaking destinations worldwide.',
     industry: 'Travel & Tourism',
     icon: Plane,
-    color: '#E879F9',
+    color: '#9B59B6',
     link: '/companies#cultural-escape',
   },
   {
@@ -34,7 +34,7 @@ const companies = [
     description: 'Sustainable agriculture and agribusiness solutions driving food security through innovative farming technologies.',
     industry: 'Agriculture',
     icon: Sprout,
-    color: '#14B8A6',
+    color: '#27AE60',
     link: '/companies#natura-agroband',
   },
   {
@@ -42,7 +42,7 @@ const companies = [
     description: 'Creating sustainable, modern living spaces that harmonize comfort, elegance, and environmental responsibility.',
     industry: 'Real Estate',
     icon: HomeIcon,
-    color: '#C084FC',
+    color: '#F39C12',
     link: '/companies#natura-homes',
   },
 ];
