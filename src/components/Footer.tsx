@@ -115,10 +115,10 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
                 <a
-                  href="mailto:info@naturacorp.com"
+                  href="mailto:info@naturacorporation.com"
                   className="text-primary-foreground/70 text-sm hover:text-accent transition-colors"
                 >
-                  info@naturacorp.com
+                  info@naturacorporation.com
                 </a>
               </li>
             </ul>
