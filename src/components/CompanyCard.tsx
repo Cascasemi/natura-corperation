@@ -11,6 +11,9 @@ interface CompanyCardProps {
 }
 
 const CompanyCard = ({ name, description, industry, icon: Icon, color, link }: CompanyCardProps) => {
+  // Check if the link is external (starts with http:// or https://)
+  const isExternalLink = link.startsWith('http://') || link.startsWith('https://');
+  
   return (
     <div className="group glass-card p-6 md:p-8 hover-lift">
       {/* Icon Container */}
@@ -38,13 +41,25 @@ const CompanyCard = ({ name, description, industry, icon: Icon, color, link }: C
       </p>
 
       {/* Link */}
-      <Link
-        to={link}
-        className="inline-flex items-center gap-2 text-sm font-medium text-primary group/link"
-      >
-        <span className="link-underline">Learn More</span>
-        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" />
-      </Link>
+      {isExternalLink ? (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-medium text-primary group/link"
+        >
+          <span className="link-underline">Learn More</span>
+          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" />
+        </a>
+      ) : (
+        <Link
+          to={link}
+          className="inline-flex items-center gap-2 text-sm font-medium text-primary group/link"
+        >
+          <span className="link-underline">Learn More</span>
+          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" />
+        </Link>
+      )}
     </div>
   );
 };

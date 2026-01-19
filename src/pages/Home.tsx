@@ -30,12 +30,12 @@ const companies = [
     link: '/companies#cultural-escape',
   },
   {
-    name: 'Natura Agroband',
+    name: 'Natura Agrobrand',
     description: 'Sustainable agriculture and agribusiness solutions driving food security through innovative farming technologies.',
     industry: 'Agriculture',
     icon: Sprout,
     color: '#45B7A0',
-    link: '/companies#natura-agroband',
+    link: 'https://agrobrand.naturacorporation.com/',
   },
   {
     name: 'Natura Homes',

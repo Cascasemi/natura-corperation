@@ -51,10 +51,10 @@ const companies = [
     image: worldcupFans,
   },
   {
-    id: 'natura-agroband',
-    name: 'Natura Agroband',
+    id: 'natura-agrobrand',
+    name: 'Natura Agrobrand',
     tagline: 'Cultivating Tomorrow\'s Harvest',
-    description: 'Natura Agroband leads the way in sustainable agriculture and agribusiness. Through innovative farming technologies and responsible practices, we\'re ensuring food security for generations to come.',
+    description: 'Natura Agrobrand leads the way in sustainable agriculture and agribusiness. Through innovative farming technologies and responsible practices, we\'re ensuring food security for generations to come.',
     services: [
       'Sustainable farming operations',
       'Agricultural technology solutions',
