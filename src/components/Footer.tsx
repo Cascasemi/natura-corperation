@@ -31,7 +31,7 @@ const Footer = () => {
     <footer className="bg-dark-gradient text-primary-foreground">
       {/* Main Footer */}
       <div className="container-custom py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">
           {/* About Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
@@ -141,7 +141,7 @@ const Footer = () => {
             <p className="text-primary-foreground/50 text-sm">
               © {currentYear} Natura Corporation. All rights reserved.
             </p>
-            <div className="flex gap-6">
+            <div className="flex gap-4 sm:gap-6">
               <a href="#" className="text-primary-foreground/50 text-sm hover:text-accent transition-colors">
                 Privacy Policy
               </a>

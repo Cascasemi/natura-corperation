@@ -64,10 +64,10 @@ const StatItem = ({ icon: Icon, value, suffix, label, delay }: StatItemProps) =>
       }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-accent/10 flex items-center justify-center">
-        <Icon className="w-8 h-8 text-accent" />
+      <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 rounded-2xl bg-accent/10 flex items-center justify-center">
+        <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-accent" />
       </div>
-      <div className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-2">
+      <div className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-foreground mb-2">
         {count}
         <span className="text-accent">{suffix}</span>
       </div>
@@ -93,7 +93,7 @@ const StatsSection = () => {
             Numbers That Speak
           </h2>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
           {stats.map((stat, index) => (
             <StatItem key={index} {...stat} />
           ))}

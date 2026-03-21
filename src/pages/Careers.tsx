@@ -107,7 +107,7 @@ const Careers = () => {
             <span className="badge mb-4">Benefits</span>
             <h2 className="heading-section text-foreground">Why Join Natura?</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {benefits.map((benefit, index) => (
               <div
                 key={benefit.title}
@@ -147,7 +147,7 @@ const Careers = () => {
                 and empowers you to make a meaningful impact.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
               {cultureImages.map((image, index) => (
                 <div
                   key={index}
@@ -178,7 +178,7 @@ const Careers = () => {
             {openPositions.map((position, index) => (
               <div
                 key={index}
-                className="glass-card p-6 hover-lift flex flex-col md:flex-row md:items-center justify-between gap-4 animate-fade-up"
+                className="glass-card p-4 sm:p-6 hover-lift flex flex-col md:flex-row md:items-center justify-between gap-4 animate-fade-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div>
@@ -197,7 +197,7 @@ const Careers = () => {
                     </span>
                   </div>
                 </div>
-                <button className="btn-primary text-sm py-2.5">
+                <button className="btn-primary text-sm py-2.5 w-full md:w-auto">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </button>

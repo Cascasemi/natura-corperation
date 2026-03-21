@@ -103,7 +103,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${
-            isOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
+            isOpen ? 'max-h-screen opacity-100 mt-4' : 'max-h-0 opacity-0'
           }`}
         >
           <div className="bg-card rounded-2xl shadow-medium p-4 space-y-2">

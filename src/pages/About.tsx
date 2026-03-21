@@ -112,8 +112,8 @@ const About = () => {
       {/* Mission & Vision */}
       <section className="section-padding bg-secondary/30">
         <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="glass-card p-8 md:p-10">
+          <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
+            <div className="glass-card p-6 sm:p-8 md:p-10">
               <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
                 <Target className="w-7 h-7 text-primary" />
               </div>
@@ -124,7 +124,7 @@ const About = () => {
                 for generations to come.
               </p>
             </div>
-            <div className="glass-card p-8 md:p-10">
+            <div className="glass-card p-6 sm:p-8 md:p-10">
               <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6">
                 <Eye className="w-7 h-7 text-accent" />
               </div>
@@ -146,7 +146,7 @@ const About = () => {
             <span className="badge mb-4">What Guides Us</span>
             <h2 className="heading-section text-foreground">Our Core Values</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {values.map((value, index) => (
               <div
                 key={value.title}
@@ -171,7 +171,7 @@ const About = () => {
             <span className="badge mb-4">Leadership</span>
             <h2 className="heading-section text-foreground">Meet Our Team</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
             {leadership.map((leader, index) => (
               <div
                 key={leader.name}
@@ -205,7 +205,7 @@ const About = () => {
             {milestones.map((milestone, index) => (
               <div
                 key={milestone.year}
-                className="relative pl-8 md:pl-12 pb-10 last:pb-0 animate-fade-up"
+                className="relative pl-6 sm:pl-8 md:pl-12 pb-8 md:pb-10 last:pb-0 animate-fade-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Line */}

@@ -13,7 +13,7 @@ const NotFound = () => {
     <main className="min-h-screen flex items-center justify-center bg-background pt-20">
       <div className="container-custom text-center py-20">
         <div className="max-w-lg mx-auto">
-          <h1 className="text-8xl md:text-9xl font-serif font-bold text-primary/20 mb-4">
+          <h1 className="text-6xl sm:text-8xl md:text-9xl font-serif font-bold text-primary/20 mb-4">
             404
           </h1>
           <h2 className="heading-section text-foreground mb-4">Page Not Found</h2>

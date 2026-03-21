@@ -23,7 +23,7 @@ const BackToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-8 right-8 z-40 w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-medium flex items-center justify-center transition-all duration-300 hover:scale-110 ${
+      className={`fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-40 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary text-primary-foreground shadow-medium flex items-center justify-center transition-all duration-300 hover:scale-110 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
       }`}
       aria-label="Back to top"

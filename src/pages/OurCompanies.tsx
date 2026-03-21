@@ -1,5 +1,6 @@
-import { Heart, CreditCard, Plane, Sprout, Home as HomeIcon, ArrowRight, ExternalLink } from 'lucide-react';
+import { Heart, CreditCard, Plane, Sprout, Home as HomeIcon, Car, ArrowRight, ExternalLink } from 'lucide-react';
 import worldcupFans from '@/assets/worldcup-fans.jpg';
+import lobiCover from '@/assets/lobi_cover_image.png';
 
 const companies = [
   {
@@ -67,6 +68,22 @@ const companies = [
     image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80',
   },
   {
+    id: 'lobi',
+    name: 'Lobi',
+    tagline: 'Your Ride, Your Way',
+    description: 'Lobi is Natura Corporation\'s innovative ride-hailing platform built to redefine urban mobility across Africa. By connecting passengers with reliable, professional drivers, Lobi delivers safe, affordable, and convenient transportation at the tap of a button — wherever you are, whenever you need it.',
+    services: [
+      'On-demand ride booking',
+      'Scheduled and corporate rides',
+      'Real-time driver tracking',
+      'Cashless and mobile payment integration',
+      'Driver onboarding and fleet management',
+    ],
+    icon: Car,
+    color: '#2E86C1',
+    image: lobiCover,
+  },
+  {
     id: 'natura-homes',
     name: 'Natura Homes',
     tagline: 'Building Dreams, Creating Communities',
@@ -94,7 +111,7 @@ const OurCompanies = () => {
           <span className="badge-accent mb-4 animate-fade-up">Our Portfolio</span>
           <h1 className="heading-display mb-6 animate-fade-up delay-100">Our Companies</h1>
           <p className="text-body text-primary-foreground/80 max-w-2xl mx-auto animate-fade-up delay-200">
-            Five industry-leading subsidiaries driving innovation and creating value across diverse sectors.
+            Six industry-leading subsidiaries driving innovation and creating value across diverse sectors.
           </p>
         </div>
       </section>
@@ -102,12 +119,12 @@ const OurCompanies = () => {
       {/* Companies Grid */}
       <section className="section-padding bg-background">
         <div className="container-custom">
-          <div className="space-y-16 md:space-y-24">
+          <div className="space-y-12 md:space-y-16 lg:space-y-24">
             {companies.map((company, index) => (
               <div
                 key={company.id}
                 id={company.id}
-                className={`grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${
+                className={`grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center ${
                   index % 2 === 1 ? 'lg:flex-row-reverse' : ''
                 }`}
               >
@@ -122,10 +139,10 @@ const OurCompanies = () => {
                   </div>
                   {/* Icon Badge */}
                   <div
-                    className="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center shadow-medium"
+                    className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 lg:-bottom-6 lg:-right-6 w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center shadow-medium"
                     style={{ backgroundColor: `${company.color}15` }}
                   >
-                    <company.icon className="w-8 h-8 lg:w-10 lg:h-10" style={{ color: company.color }} />
+                    <company.icon className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10" style={{ color: company.color }} />
                   </div>
                 </div>
 

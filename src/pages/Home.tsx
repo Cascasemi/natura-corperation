@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, ChevronDown, Heart, CreditCard, Plane, Sprout, Home as HomeIcon } from 'lucide-react';
+import { ArrowRight, ChevronDown, Heart, CreditCard, Plane, Sprout, Home as HomeIcon, Car } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
 import CompanyCard from '@/components/CompanyCard';
 import StatsSection from '@/components/StatsSection';
@@ -45,6 +45,14 @@ const companies = [
     color: '#76D7C4',
     link: '/companies#natura-homes',
   },
+  {
+    name: 'Lobi',
+    description: 'A ride-hailing platform redefining urban mobility across Africa with safe, affordable, and convenient transportation at the tap of a button.',
+    industry: 'Transportation',
+    icon: Car,
+    color: '#2E86C1',
+    link: '/companies#lobi',
+  },
 ];
 
 const Home = () => {
@@ -68,8 +76,8 @@ const Home = () => {
 
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-primary-foreground/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '-3s' }} />
+          <div className="absolute top-1/4 right-1/4 w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 bg-accent/10 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-1/3 left-1/4 w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 bg-primary-foreground/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '-3s' }} />
         </div>
 
         {/* Content */}
@@ -141,8 +149,8 @@ const Home = () => {
                 />
               </div>
               {/* Decorative Elements */}
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-accent/20 rounded-2xl -z-10" />
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full -z-10" />
+              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-16 h-16 sm:w-24 sm:h-24 bg-accent/20 rounded-2xl -z-10" />
+              <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-20 h-20 sm:w-32 sm:h-32 bg-primary/10 rounded-full -z-10" />
             </div>
           </div>
         </div>
@@ -157,7 +165,7 @@ const Home = () => {
               Our Companies
             </h2>
             <p className="text-body text-muted-foreground max-w-2xl mx-auto">
-              Five industry-leading subsidiaries driving innovation and creating value 
+              Six industry-leading subsidiaries driving innovation and creating value
               across diverse sectors.
             </p>
           </div>
