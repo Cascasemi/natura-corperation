@@ -13,18 +13,19 @@ const Footer = () => {
   ];
 
   const companies = [
-    { name: 'Natura Care', path: '/companies#natura-care' },
-    { name: 'Factopay', path: '/companies#factopay' },
-    { name: 'Cultural Escape Travels', path: '/companies#cultural-escape' },
-    { name: 'Natura Agroband', path: '/companies#natura-agroband' },
-    { name: 'Natura Homes', path: '/companies#natura-homes' },
+    { name: 'Natura Care', path: '/companies/natura-care' },
+    { name: 'Factopay', path: '/companies/factopay' },
+    { name: 'Cultural Escape Travels', path: '/companies/cultural-escape' },
+    { name: 'Natura Agroband', path: '/companies/natura-agrobrand' },
+    { name: 'Lobi', path: '/companies/lobi' },
+    { name: 'Natura Homes', path: '/companies/natura-homes' },
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/dr-oliver-boakye-danquah-42aaa0263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', label: 'LinkedIn' },
     { icon: Twitter, href: '#', label: 'Twitter' },
     { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/natura_corporation?igsh=enVwcnI2MHF3c3h6', label: 'Instagram' },
   ];
 
   return (
@@ -41,8 +42,8 @@ const Footer = () => {
               <span className="text-xl font-serif font-bold">Natura</span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
-              Building sustainable futures through diverse investments across healthcare, 
-              finance, travel, agriculture, and real estate.
+              Building sustainable futures through diverse investments across healthcare,
+              finance, travel, agriculture, real estate, and transportation.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (

@@ -11,7 +11,7 @@ const companies = [
     industry: 'Healthcare',
     icon: Heart,
     color: '#5DADE2',
-    link: '/companies#natura-care',
+    link: '/companies/natura-care',
   },
   {
     name: 'Factopay',
@@ -19,7 +19,7 @@ const companies = [
     industry: 'Finance',
     icon: CreditCard,
     color: '#48C9B0',
-    link: '/companies#factopay',
+    link: '/companies/factopay',
   },
   {
     name: 'Cultural Escape Travels',
@@ -27,7 +27,7 @@ const companies = [
     industry: 'Travel & Tourism',
     icon: Plane,
     color: '#85C1E2',
-    link: '/companies#cultural-escape',
+    link: '/companies/cultural-escape',
   },
   {
     name: 'Natura Agrobrand',
@@ -35,7 +35,7 @@ const companies = [
     industry: 'Agriculture',
     icon: Sprout,
     color: '#45B7A0',
-    link: 'https://agrobrand.naturacorporation.com/',
+    link: '/companies/natura-agrobrand',
   },
   {
     name: 'Natura Homes',
@@ -43,15 +43,15 @@ const companies = [
     industry: 'Real Estate',
     icon: HomeIcon,
     color: '#76D7C4',
-    link: '/companies#natura-homes',
+    link: '/companies/natura-homes',
   },
   {
     name: 'Lobi',
-    description: 'A ride-hailing platform redefining urban mobility across Africa with safe, affordable, and convenient transportation at the tap of a button.',
+    description: 'A ride-hailing platform set to redefine urban mobility across Africa with safe, affordable, and convenient transportation at the tap of a button.',
     industry: 'Transportation',
     icon: Car,
     color: '#2E86C1',
-    link: '/companies#lobi',
+    link: '/companies/lobi',
   },
 ];
 
@@ -90,8 +90,8 @@ const Home = () => {
               Natura Corporation
             </h1>
             <p className="text-body text-primary-foreground/80 max-w-2xl mx-auto mb-10 animate-fade-up delay-200">
-              A diversified holding company driving innovation across healthcare, finance, 
-              travel, agriculture, and real estate. Together, we're building a better tomorrow.
+              A diversified holding company driving innovation across healthcare, finance,
+              travel, agriculture, real estate, and transportation. Together, we're building a better tomorrow.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Link to="/companies" className="btn-accent">

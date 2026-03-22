@@ -13,6 +13,7 @@ import OurCompanies from "@/pages/OurCompanies";
 import Careers from "@/pages/Careers";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
+import CompanyPage from "@/pages/CompanyPage";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/companies" element={<OurCompanies />} />
+              <Route path="/companies/:id" element={<CompanyPage />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />

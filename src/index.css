@@ -106,6 +106,10 @@
     font-family: 'Times New Roman', Times, serif;
     @apply font-semibold tracking-tight;
   }
+
+  input, textarea, select, button, a {
+    font-family: 'Times New Roman', Times, serif;
+  }
 }
 
 @layer components {

@@ -95,7 +95,7 @@ const Careers = () => {
           <span className="badge-accent mb-4 animate-fade-up">Join Our Team</span>
           <h1 className="heading-display mb-6 animate-fade-up delay-100">Build Your Career</h1>
           <p className="text-body text-primary-foreground/80 max-w-2xl mx-auto animate-fade-up delay-200">
-            Join a team of passionate professionals shaping the future across five dynamic industries.
+            Join a team of passionate professionals shaping the future across six dynamic industries.
           </p>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Heart, CreditCard, Plane, Sprout, Home as HomeIcon, Car, ArrowRight, ExternalLink } from 'lucide-react';
 import worldcupFans from '@/assets/worldcup-fans.jpg';
 import lobiCover from '@/assets/lobi_cover_image.png';
@@ -174,14 +175,14 @@ const OurCompanies = () => {
                     </ul>
                   </div>
 
-                  <a
-                    href="#"
-                    className="inline-flex items-center gap-2 text-sm font-medium transition-colors"
+                  <Link
+                    to={`/companies/${company.id}`}
+                    className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:opacity-80"
                     style={{ color: company.color }}
                   >
                     Visit Website
                     <ExternalLink className="w-4 h-4" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

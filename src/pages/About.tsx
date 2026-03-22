@@ -1,4 +1,5 @@
-import { Target, Eye, Heart, Users, Award, Lightbulb } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Target, Eye, Heart, Users, Award, Lightbulb, ArrowRight } from 'lucide-react';
 import oliverImg from '@/assets/team/oliver.jpg';
 import benajahImg from '@/assets/team/Benajah.jpg';
 import georgeImg from '@/assets/team/george.jpg';
@@ -46,12 +47,13 @@ const leadership = [
 ];
 
 const milestones = [
-  { year: 'Sep/2023', title: 'Foundation', description: 'Natura Corporation founded with a vision for sustainable growth.' },
-  { year: 'Dec/2023', title: 'First Acquisition', description: 'Natura Care established, entering the healthcare sector.' },
-  { year: 'April/2024', title: 'Financial Expansion', description: 'Launch of Factopay, revolutionizing payment solutions.' },
-  { year: 'June/2024', title: 'Global Reach', description: 'Cultural Escape Travels opens doors to worldwide tourism.' },
-  { year: 'Jan/2025', title: 'Agriculture Initiative', description: 'Natura Agroband founded for sustainable farming.' },
-  { year: 'June/2025', title: 'FactoPay Anticipation', description: 'FactoPay enters into the world of digital finance.' },
+  { year: 'Sep/2023', title: 'Foundation', description: 'Natura Corporation founded with a vision for sustainable growth.', link: null },
+  { year: 'Dec/2023', title: 'First Acquisition', description: 'Natura Care established, entering the healthcare sector.', link: '/companies/natura-care' },
+  { year: 'April/2024', title: 'Financial Expansion', description: 'Launch of Factopay, revolutionizing payment solutions.', link: '/companies/factopay' },
+  { year: 'June/2024', title: 'Global Reach', description: 'Cultural Escape Travels opens doors to worldwide tourism.', link: '/companies/cultural-escape' },
+  { year: 'Jan/2025', title: 'Agriculture Initiative', description: 'Natura Agroband founded for sustainable farming.', link: '/companies/natura-agrobrand' },
+  { year: 'June/2025', title: 'FactoPay Anticipation', description: 'FactoPay enters into the world of digital finance.', link: '/companies/factopay' },
+  { year: 'March/2026', title: 'Lobi Anticipation', description: 'Lobi ride-hailing platform set to redefine urban transportation across Africa.', link: '/companies/lobi' },
 ];
 
 const About = () => {
@@ -84,9 +86,9 @@ const About = () => {
                 a positive impact on communities worldwide.
               </p>
               <p className="text-body text-muted-foreground mb-6">
-                Over the past two decades, we've grown from a single venture into a 
-                diversified conglomerate spanning five key industries. Our success is built 
-                on the foundation of strong values, strategic investments, and a commitment 
+                Over the past two years, we've grown from a single venture into a
+                diversified conglomerate spanning six key industries. Our success is built
+                on the foundation of strong values, strategic investments, and a commitment
                 to excellence in everything we do.
               </p>
               <p className="text-body text-muted-foreground">
@@ -213,13 +215,30 @@ const About = () => {
                 {/* Dot */}
                 <div className="absolute left-0 top-1 w-2 h-2 rounded-full bg-accent -translate-x-1/2" />
                 {/* Content */}
-                <div className="glass-card p-6">
-                  <span className="text-sm font-medium text-accent">{milestone.year}</span>
-                  <h3 className="text-lg font-serif font-semibold text-foreground mt-1 mb-2">
-                    {milestone.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">{milestone.description}</p>
-                </div>
+                {milestone.link ? (
+                  <Link
+                    to={milestone.link}
+                    className="glass-card p-6 block group hover:-translate-y-1 transition-transform duration-300"
+                    style={{ boxShadow: 'var(--shadow-soft)' }}
+                  >
+                    <span className="text-sm font-medium text-accent">{milestone.year}</span>
+                    <h3 className="text-lg font-serif font-semibold text-foreground mt-1 mb-2">
+                      {milestone.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-3">{milestone.description}</p>
+                    <span className="inline-flex items-center gap-1 text-xs font-medium text-accent group-hover:gap-2 transition-all duration-200">
+                      Visit Company <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </Link>
+                ) : (
+                  <div className="glass-card p-6">
+                    <span className="text-sm font-medium text-accent">{milestone.year}</span>
+                    <h3 className="text-lg font-serif font-semibold text-foreground mt-1 mb-2">
+                      {milestone.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">{milestone.description}</p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
