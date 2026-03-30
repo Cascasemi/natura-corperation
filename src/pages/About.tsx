@@ -51,7 +51,7 @@ const milestones = [
   { year: 'Dec/2023', title: 'First Acquisition', description: 'Natura Care established, entering the healthcare sector.', link: '/companies/natura-care' },
   { year: 'April/2024', title: 'Financial Expansion', description: 'Launch of Factopay, revolutionizing payment solutions.', link: '/companies/factopay' },
   { year: 'June/2024', title: 'Global Reach', description: 'Cultural Escape Travels opens doors to worldwide tourism.', link: '/companies/cultural-escape' },
-  { year: 'Jan/2025', title: 'Agriculture Initiative', description: 'Natura Agroband founded for sustainable farming.', link: '/companies/natura-agrobrand' },
+  { year: 'Jan/2025', title: 'Agriculture Initiative', description: 'Natura Agroband founded for sustainable farming.', link: 'https://agrobrand.naturacorporation.com/' },
   { year: 'June/2025', title: 'FactoPay Anticipation', description: 'FactoPay enters into the world of digital finance.', link: '/companies/factopay' },
   { year: 'March/2026', title: 'Lobi Anticipation', description: 'Lobi ride-hailing platform set to redefine urban transportation across Africa.', link: '/companies/lobi' },
 ];
@@ -216,6 +216,24 @@ const About = () => {
                 <div className="absolute left-0 top-1 w-2 h-2 rounded-full bg-accent -translate-x-1/2" />
                 {/* Content */}
                 {milestone.link ? (
+                  milestone.link.startsWith('http') ? (
+                    <a
+                      href={milestone.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="glass-card p-6 block group hover:-translate-y-1 transition-transform duration-300"
+                      style={{ boxShadow: 'var(--shadow-soft)' }}
+                    >
+                      <span className="text-sm font-medium text-accent">{milestone.year}</span>
+                      <h3 className="text-lg font-serif font-semibold text-foreground mt-1 mb-2">
+                        {milestone.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground mb-3">{milestone.description}</p>
+                      <span className="inline-flex items-center gap-1 text-xs font-medium text-accent group-hover:gap-2 transition-all duration-200">
+                        Visit Company <ArrowRight className="w-3 h-3" />
+                      </span>
+                    </a>
+                  ) : (
                   <Link
                     to={milestone.link}
                     className="glass-card p-6 block group hover:-translate-y-1 transition-transform duration-300"
@@ -230,6 +248,7 @@ const About = () => {
                       Visit Company <ArrowRight className="w-3 h-3" />
                     </span>
                   </Link>
+                  )
                 ) : (
                   <div className="glass-card p-6">
                     <span className="text-sm font-medium text-accent">{milestone.year}</span>

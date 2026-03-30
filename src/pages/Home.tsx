@@ -35,7 +35,7 @@ const companies = [
     industry: 'Agriculture',
     icon: Sprout,
     color: '#45B7A0',
-    link: '/companies/natura-agrobrand',
+    link: 'https://agrobrand.naturacorporation.com/',
   },
   {
     name: 'Natura Homes',

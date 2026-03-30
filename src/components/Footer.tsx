@@ -16,7 +16,7 @@ const Footer = () => {
     { name: 'Natura Care', path: '/companies/natura-care' },
     { name: 'Factopay', path: '/companies/factopay' },
     { name: 'Cultural Escape Travels', path: '/companies/cultural-escape' },
-    { name: 'Natura Agroband', path: '/companies/natura-agrobrand' },
+    { name: 'Natura Agroband', path: 'https://agrobrand.naturacorporation.com/', external: true },
     { name: 'Lobi', path: '/companies/lobi' },
     { name: 'Natura Homes', path: '/companies/natura-homes' },
   ];
@@ -82,12 +82,23 @@ const Footer = () => {
             <ul className="space-y-3">
               {companies.map((company) => (
                 <li key={company.path}>
-                  <Link
-                    to={company.path}
-                    className="text-primary-foreground/70 text-sm hover:text-accent transition-colors duration-200"
-                  >
-                    {company.name}
-                  </Link>
+                  {company.external ? (
+                    <a
+                      href={company.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary-foreground/70 text-sm hover:text-accent transition-colors duration-200"
+                    >
+                      {company.name}
+                    </a>
+                  ) : (
+                    <Link
+                      to={company.path}
+                      className="text-primary-foreground/70 text-sm hover:text-accent transition-colors duration-200"
+                    >
+                      {company.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
