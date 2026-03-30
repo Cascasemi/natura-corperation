@@ -67,6 +67,7 @@ const companies = [
     icon: Sprout,
     color: '#45B7A0',
     image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80',
+    externalUrl: 'https://agrobrand.naturacorporation.com/',
   },
   {
     id: 'lobi',
@@ -175,14 +176,27 @@ const OurCompanies = () => {
                     </ul>
                   </div>
 
-                  <Link
-                    to={`/companies/${company.id}`}
-                    className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:opacity-80"
-                    style={{ color: company.color }}
-                  >
-                    Visit Website
-                    <ExternalLink className="w-4 h-4" />
-                  </Link>
+                  {company.externalUrl ? (
+                    <a
+                      href={company.externalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:opacity-80"
+                      style={{ color: company.color }}
+                    >
+                      Visit Website
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  ) : (
+                    <Link
+                      to={`/companies/${company.id}`}
+                      className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:opacity-80"
+                      style={{ color: company.color }}
+                    >
+                      Visit Website
+                      <ExternalLink className="w-4 h-4" />
+                    </Link>
+                  )}
                 </div>
               </div>
             ))}
