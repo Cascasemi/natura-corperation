@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://naturacorp.com/sitemap.xml
+Sitemap: https://natura-corperation.onrender.com/sitemap.xml
 
 User-agent: Googlebot
 Allow: /
