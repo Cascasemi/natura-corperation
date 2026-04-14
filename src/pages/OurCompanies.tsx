@@ -84,6 +84,7 @@ const companies = [
     icon: Car,
     color: '#2E86C1',
     image: lobiCover,
+    externalUrl: 'https://lobi-tz4x.onrender.com',
   },
   {
     id: 'natura-homes',

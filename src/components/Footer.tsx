@@ -17,7 +17,7 @@ const Footer = () => {
     { name: 'Factopay', path: '/companies/factopay' },
     { name: 'Cultural Escape Travels', path: '/companies/cultural-escape' },
     { name: 'Natura Agroband', path: 'https://agrobrand.naturacorporation.com/', external: true },
-    { name: 'Lobi', path: '/companies/lobi' },
+    { name: 'Lobi', path: 'https://lobi-tz4x.onrender.com', external: true },
     { name: 'Natura Homes', path: '/companies/natura-homes' },
   ];
 

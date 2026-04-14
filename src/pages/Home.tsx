@@ -51,7 +51,7 @@ const companies = [
     industry: 'Transportation',
     icon: Car,
     color: '#2E86C1',
-    link: '/companies/lobi',
+    link: 'https://lobi-tz4x.onrender.com',
   },
 ];
 
