@@ -323,6 +323,145 @@
   50% { opacity: 0.7; }
 }
 
+/* ── New keyframes ─────────────────────────────────────────────────────── */
+
+@keyframes icon-bounce {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.22); }
+  55%  { transform: scale(0.92); }
+  75%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+@keyframes pulseRing {
+  from { transform: scale(1);   opacity: 0.55; }
+  to   { transform: scale(1.9); opacity: 0; }
+}
+
+@keyframes rippleAnim {
+  to { transform: scale3d(4, 4, 1); opacity: 0; }
+}
+
+/* ── Scroll Progress Bar ───────────────────────────────────────────────── */
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(135deg, hsl(38 85% 55%) 0%, hsl(42 90% 60%) 100%);
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.1s linear;
+  z-index: 9999;
+  will-change: transform;
+}
+
+/* ── Scroll Reveal ─────────────────────────────────────────────────────── */
+
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal       { transform: translateY(36px); }
+.reveal-left  { transform: translateX(-48px); }
+.reveal-right { transform: translateX(48px); }
+.reveal-scale { transform: scale(0.88); }
+
+.reveal.visible,
+.reveal-left.visible,
+.reveal-right.visible,
+.reveal-scale.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Card Hover Lift ───────────────────────────────────────────────────── */
+
+.card-hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  will-change: transform;
+}
+
+.card-hover:hover {
+  transform: scale(1.03) translateY(-6px);
+  box-shadow: 0 24px 48px -12px hsla(175, 40%, 35%, 0.22);
+}
+
+/* ── Icon Bounce ───────────────────────────────────────────────────────── */
+
+.bounce-icon {
+  cursor: default;
+}
+
+.bounce-icon.bouncing {
+  animation: icon-bounce 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+/* ── Pulse Ring (CTA icons) ────────────────────────────────────────────── */
+
+.pulse-ring {
+  position: relative;
+}
+
+.pulse-ring::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  background: currentColor;
+  opacity: 0;
+  animation: pulseRing 0.75s cubic-bezier(0.22, 1, 0.36, 1) 2.5s infinite;
+  will-change: transform, opacity;
+}
+
+/* ── Ripple on Button Click ────────────────────────────────────────────── */
+
+.btn-primary,
+.btn-accent,
+.btn-outline,
+.btn-ghost {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale3d(0, 0, 1);
+  animation: rippleAnim 0.55s linear;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* ── Cookie / App Banner ───────────────────────────────────────────────── */
+
+#app-banner {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(140px);
+  opacity: 0;
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
+              opacity 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 999;
+  pointer-events: none;
+}
+
+#app-banner.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;

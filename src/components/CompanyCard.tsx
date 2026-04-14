@@ -15,10 +15,10 @@ const CompanyCard = ({ name, description, industry, icon: Icon, color, link }: C
   const isExternalLink = link.startsWith('http://') || link.startsWith('https://');
   
   return (
-    <div className="group glass-card p-6 md:p-8 hover-lift">
+    <div className="group glass-card p-6 md:p-8 card-hover">
       {/* Icon Container */}
-      <div 
-        className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110"
+      <div
+        className="bounce-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
         style={{ backgroundColor: `${color}15` }}
       >
         <Icon className="w-7 h-7" style={{ color }} />
